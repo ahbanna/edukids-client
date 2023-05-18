@@ -1,0 +1,46 @@
+/* header-area */
+.header-area {
+  background: #131313;
+  padding: 15px 0;
+  display: flex;
+  justify-content: between;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-area a {
+  text-decoration: none;
+  color: #c6c3bf;
+}
+.main-menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header-login-btn button {
+  background: #ff7f00;
+  border: navajowhite;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 7px 25px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 576px) {
+  .header-area {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-toggler.collapsed {
+    background: #fff;
+  }
+  .navbar-toggler {
+    background: #fff;
+  }
+  #responsive-navbar-nav {
+    text-align: center;
+  }
+  .header-area ul {
+    padding: 0;
+  }
+}

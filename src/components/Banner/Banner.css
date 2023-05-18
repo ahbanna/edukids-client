@@ -1,0 +1,34 @@
+.banner-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content h2 {
+  color: #253b70;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 5rem;
+}
+.banner-content p {
+  color: #454442;
+  font-size: 22px;
+  margin: 20px 0;
+}
+.banner-content button {
+  background: #ff4646;
+  border: navajowhite;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.banner-content button:hover {
+  background: #253b70;
+  border-radius: 20px;
+  transition: 0.3s;
+}
