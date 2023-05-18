@@ -1,0 +1,28 @@
+.error-area {
+  padding: 200px 0;
+}
+.error-area img {
+  width: 100%;
+}
+.error-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.back-to-home-btn button {
+  background: #ff4646;
+  border: navajowhite;
+  padding: 10px 35px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.back-to-home-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.back-to-home-btn button:hover {
+  background: #253b70;
+  border-radius: 20px;
+  transition: 0.3s;
+}
