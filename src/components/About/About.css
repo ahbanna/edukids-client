@@ -1,0 +1,33 @@
+.about-area {
+  padding-bottom: 40px;
+  /* background: #f7f7fd; */
+  background: #f8f9fa;
+}
+.about-content p {
+  color: #686464;
+}
+.about-area .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btn button {
+  background: #ff4646;
+  border: navajowhite;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+.contact-btn button:hover {
+  background: #253b70;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.about-img img {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 5px;
+  width: 100%;
+}

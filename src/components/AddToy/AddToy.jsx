@@ -1,8 +1,58 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import Swal from "sweetalert2";
 import "./AddToy.css";
 
 const AddToy = () => {
+  const handleAddToy = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const toyName = form.toyName.value;
+    const toyPic = form.toyPic.value;
+    const sellerName = form.sellerName.value;
+    const sellerEmail = form.sellerEmail.value;
+    const subCategory = form.subCategory.value;
+    const price = form.price.value;
+    const rating = form.rating.value;
+    const quantity = form.quantity.value;
+    const description = form.description.value;
+
+    const newToy = {
+      toyName,
+      toyPic,
+      sellerName,
+      sellerEmail,
+      subCategory,
+      price,
+      rating,
+      quantity,
+      description,
+    };
+    console.log(newToy);
+
+    // send data to server starts
+    fetch("http://localhost:5000/alltoys", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newToy),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success",
+            text: "Toy added successfully",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
+        }
+      });
+    // send data to server end
+  };
+
   return (
     <div className="add-toy-area">
       <div className="container">
@@ -11,7 +61,7 @@ const AddToy = () => {
           <h3>Add A Toy</h3>
         </div>
         <div>
-          <Form>
+          <Form onSubmit={handleAddToy}>
             <div className="form-area">
               <div>
                 <Form.Group className="mb-3" controlId="toyName">
@@ -25,11 +75,11 @@ const AddToy = () => {
               </div>
 
               <div>
-                <Form.Group className="mb-3" controlId="toyPictureUrl">
+                <Form.Group className="mb-3" controlId="toyPic">
                   <Form.Label>Toy Picture URL</Form.Label>
                   <Form.Control
                     type="text"
-                    name="toyPictureUrl"
+                    name="toyPic"
                     placeholder="Enter toy image url"
                   />
                 </Form.Group>
@@ -66,9 +116,7 @@ const AddToy = () => {
                     // value={formData.subCategory}
                     // onChange={handleChange}
                   >
-                    <option value="" className="sub-cat-head">
-                      Select a sub-category
-                    </option>
+                    <option value="">Select a sub-category</option>
                     <option value="Math Toys">Math Toys</option>
                     <option value="Language Toys">Language Toys</option>
                     <option value="Science Toys">Science Toys</option>
@@ -87,7 +135,7 @@ const AddToy = () => {
                 </Form.Group>
               </div>
 
-              <div>
+              {/* <div>
                 <Form.Group className="mb-3" controlId="rating">
                   <Form.Label>Rating</Form.Label>
                   <Form.Control
@@ -96,14 +144,30 @@ const AddToy = () => {
                     placeholder="Rating"
                   />
                 </Form.Group>
+              </div> */}
+
+              <div>
+                <Form.Group className="mb-3" controlId="rating">
+                  <Form.Label>Rating</Form.Label>
+                  <Form.Select name="rating" defaultValue="">
+                    <option value="" disabled>
+                      Select a rating
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </Form.Select>
+                </Form.Group>
               </div>
 
               <div>
-                <Form.Group className="mb-3" controlId="availableQuantity">
+                <Form.Group className="mb-3" controlId="quantity">
                   <Form.Label>Available Quantity</Form.Label>
                   <Form.Control
                     type="number"
-                    name="availableQuantity"
+                    name="quantity"
                     placeholder="Quantity"
                   />
                 </Form.Group>

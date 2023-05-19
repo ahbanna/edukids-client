@@ -6,7 +6,8 @@
   grid-template-columns: auto auto auto;
   grid-column-gap: 50px;
 }
-.form-area .form-control {
+.form-area .form-control,
+.form-area .form-select {
   background: #fbfbff;
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.05);
   border: 1px solid #c8c8c8;
@@ -16,6 +17,11 @@
 }
 .form-area .form-control:focus {
   border-color: #e33324;
+  box-shadow: none;
+}
+.form-area .form-select:focus {
+  border-color: #e33324;
+  outline: 0;
   box-shadow: none;
 }
 .form-area label {
