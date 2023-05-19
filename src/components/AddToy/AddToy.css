@@ -1,0 +1,42 @@
+.add-toy-area {
+  background: #f9f9ff;
+}
+.form-area {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+}
+.form-area .form-control {
+  background: #fbfbff;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid #c8c8c8;
+  padding: 10px 15px;
+  height: 50px;
+  /* font-weight: 600; */
+}
+.form-area .form-control:focus {
+  border-color: #e33324;
+  box-shadow: none;
+}
+.form-area label {
+  font-weight: 500;
+}
+.add-toy-submit-btn {
+  padding: 30px 0;
+}
+.add-toy-submit-btn button {
+  background: #ff4646;
+  padding: 12px 70px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 0;
+  border: none;
+  display: block;
+  margin: auto;
+}
+.add-toy-submit-btn button:hover {
+  background: #253b70;
+  border-radius: 20px;
+  transition: 0.3s;
+}
