@@ -25,12 +25,13 @@
 }
 .login-area button {
   background: #ff4646;
-  border: navajowhite;
+  border: 0;
   padding: 8px 20px;
   color: #fff;
   font-weight: 600;
   transition: 0.3s;
   width: 100%;
+  border-radius: 0;
 }
 .login-area button:hover {
   background: #253b70;
@@ -45,7 +46,7 @@
   margin: 0;
   position: relative;
 }
-.google-login::before {
+.google-login h4::before {
   position: absolute;
   bottom: 35%;
   left: 171px;
@@ -55,9 +56,8 @@
   background: #c4c1c1;
   right: 0;
   margin: 0 auto;
-  /* top: ; */
 }
-.google-login::after {
+.google-login h4::after {
   position: absolute;
   bottom: 35%;
   width: 120px;
@@ -65,4 +65,26 @@
   content: "";
   background: #c4c1c1;
   margin: 0 auto;
+  left: -174px;
+  right: 0;
+}
+.google-login button {
+  border: none;
+  background: #253b70;
+  border-radius: 0;
+  margin-top: 15px;
+}
+.google-login button:hover {
+  background: #ff4646;
+}
+p.error-msg {
+  letter-spacing: normal;
+  text-align: inherit;
+  color: red;
+  margin-top: 7px;
+}
+p.text-success {
+  letter-spacing: 0;
+  text-align: left;
+  margin-top: 6px;
 }
