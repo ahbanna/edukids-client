@@ -2,8 +2,10 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import Swal from "sweetalert2";
 import "./AddToy.css";
+import useTitle from "../../hooks/useTitle";
 
 const AddToy = () => {
+  useTitle("Add a toy");
   const handleAddToy = (event) => {
     event.preventDefault();
     const form = event.target;

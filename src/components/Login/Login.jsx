@@ -4,11 +4,13 @@ import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import useTitle from "../../hooks/useTitle";
 
 const Login = () => {
   const { signIn, signInWithGoogle } = useContext(AuthContext);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  useTitle("Login");
 
   const handleLogin = (event) => {
     event.preventDefault();

@@ -5,6 +5,7 @@ import PageNotFound from "../components/PageNotFound/PageNotFound";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import AddToy from "../components/AddToy/AddToy";
+import Blog from "../components/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/addtoy",
         element: <AddToy></AddToy>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
       {
         path: "*",
