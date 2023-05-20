@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="about-area">
       <div className="container">
@@ -31,7 +36,7 @@ const About = () => {
               <button>Contact Us</button>
             </div>
           </div>
-          <div className="col-lg-6 about-img">
+          <div className="col-lg-6 about-img" data-aos="zoom-in-left">
             {/* <img src={about} alt="" /> */}
             <img
               src="https://images.pexels.com/photos/8535144/pexels-photo-8535144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
