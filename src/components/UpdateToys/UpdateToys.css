@@ -1,0 +1,26 @@
+.update-now-btn button {
+  background: green;
+  padding: 10px 15px;
+  border: navajowhite;
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+}
+.update-now-btn {
+  padding: 20px 40px;
+}
+.update-now-btn button:hover {
+  background: #253b70;
+  transition: 0.3s;
+}
+.update-area-form {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #ff4646;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.update-area {
+  padding: 40px 0 60px 0;
+}

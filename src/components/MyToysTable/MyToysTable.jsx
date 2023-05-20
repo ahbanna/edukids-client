@@ -1,6 +1,7 @@
 import React from "react";
 import "./MyToysTable.css";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const MyToysTable = ({ myToy, handleDelete }) => {
   const { _id, price, quantity, description } = myToy;
@@ -11,7 +12,9 @@ const MyToysTable = ({ myToy, handleDelete }) => {
       <td>{quantity}</td>
       <td>{description}</td>
       <td>
-        <button>Update</button>
+        <Link to={`${_id}`}>
+          <button className="update-btn">Update</button>
+        </Link>
       </td>
       <td>
         <button className="delete-btn" onClick={() => handleDelete(_id)}>

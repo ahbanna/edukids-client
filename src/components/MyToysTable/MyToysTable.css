@@ -12,3 +12,17 @@
   border-radius: 0;
   transition: 0.3s;
 }
+.update-btn {
+  background: green;
+  padding: 8px 15px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  border: none;
+  border-radius: 20px;
+}
+.update-btn:hover {
+  background: #253b70;
+  border-radius: 0;
+  transition: 0.3s;
+}

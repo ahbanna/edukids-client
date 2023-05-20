@@ -136,18 +136,6 @@ const AddToy = () => {
                   />
                 </Form.Group>
               </div>
-
-              {/* <div>
-                <Form.Group className="mb-3" controlId="rating">
-                  <Form.Label>Rating</Form.Label>
-                  <Form.Control
-                    type="number"
-                    name="rating"
-                    placeholder="Rating"
-                  />
-                </Form.Group>
-              </div> */}
-
               <div>
                 <Form.Group className="mb-3" controlId="rating">
                   <Form.Label>Rating</Form.Label>

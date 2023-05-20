@@ -4,7 +4,9 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Table } from "react-bootstrap";
 import MyToysTable from "../MyToysTable/MyToysTable";
 import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 const MyToys = () => {
+  useTitle("My Toys");
   const { user } = useContext(AuthContext);
   const [myToys, setMyToys] = useState([]);
   const url = `http://localhost:5000/mytoys?email=${user?.email}`;
@@ -51,7 +53,7 @@ const MyToys = () => {
         <p>Preview</p>
         <h3>My Toys</h3>
       </div>
-      <Table striped bordered hover>
+      <Table striped bordered hover className="mb-5">
         <thead>
           <tr>
             <th>Price</th>
@@ -62,12 +64,6 @@ const MyToys = () => {
           </tr>
         </thead>
         <tbody>
-          {/* <tr>
-            <td>1</td>
-            <td>{myToys.price}</td>
-            <td>{myToys.quantity}</td>
-            <td>{myToys.description}</td>
-          </tr> */}
           {myToys.map((myToy) => (
             <MyToysTable
               key={myToy._id}
