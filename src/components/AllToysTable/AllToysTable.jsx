@@ -1,9 +1,9 @@
 import React from "react";
 import "./AllToysTable.css";
-
+import { Link } from "react-router-dom";
 
 const AllToysTable = ({ toy }) => {
-  const { sellerName, toyName, subCategory, price, quantity } = toy;
+  const { sellerName, toyName, subCategory, price, quantity, _id } = toy;
   return (
     <tr>
       <td>{sellerName}</td>
@@ -12,7 +12,9 @@ const AllToysTable = ({ toy }) => {
       <td>{price}</td>
       <td>{quantity}</td>
       <td>
-        <button className="view-details-btn">View Details</button>
+        <Link to={`${_id}`}>
+          <button className="view-details-btn">View Details</button>
+        </Link>
       </td>
     </tr>
   );

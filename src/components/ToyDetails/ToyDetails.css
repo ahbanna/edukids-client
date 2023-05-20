@@ -1,0 +1,19 @@
+.toy-details-area img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 600px;
+}
+.toy-details-area {
+  padding-bottom: 50px;
+}
+.details-content span {
+  font-weight: 600;
+}
+.toy-details-area .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toy-details-area p {
+  margin-bottom: 10px;
+}
