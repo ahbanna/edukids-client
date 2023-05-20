@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import useTitle from "../../hooks/useTitle";
@@ -11,6 +11,12 @@ const Login = () => {
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   useTitle("Login");
+
+  // navigate starts
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  // navigate end
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -25,6 +31,7 @@ const Login = () => {
         console.log(user);
         event.target.reset();
         setSuccess("Log in Successfully");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
