@@ -12,7 +12,7 @@ const AddToy = () => {
     const toyName = form.toyName.value;
     const toyPic = form.toyPic.value;
     const sellerName = form.sellerName.value;
-    const sellerEmail = form.sellerEmail.value;
+    const email = form.email.value;
     const subCategory = form.subCategory.value;
     const price = form.price.value;
     const rating = form.rating.value;
@@ -23,7 +23,7 @@ const AddToy = () => {
       toyName,
       toyPic,
       sellerName,
-      sellerEmail,
+      email,
       subCategory,
       price,
       rating,
@@ -99,11 +99,11 @@ const AddToy = () => {
               </div>
 
               <div>
-                <Form.Group className="mb-3" controlId="sellerEmail">
+                <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Seller Email</Form.Label>
                   <Form.Control
                     type="email"
-                    name="sellerEmail"
+                    name="email"
                     placeholder="Seller Email"
                   />
                 </Form.Group>
