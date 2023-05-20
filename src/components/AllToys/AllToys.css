@@ -1,3 +1,19 @@
 .all-toys-table {
   text-align: center;
 }
+.search-area {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.search-area input {
+  background: #fbfbff;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid #c8c8c8;
+  padding: 10px 15px;
+  height: 50px;
+}
+.search-area input:focus {
+  border-color: #e33324;
+  box-shadow: none;
+}
