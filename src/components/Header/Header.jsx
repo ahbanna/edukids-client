@@ -12,8 +12,8 @@ const Header = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div>
-      <div className="header-area">
+    <div className="header-area">
+      <div className="container">
         <div className="header-logo">
           <Link to="/">
             <h2>EduKids</h2>

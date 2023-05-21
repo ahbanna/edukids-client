@@ -1,10 +1,12 @@
 /* header-area */
 .header-area {
   background: #131313;
+}
+.header-area .container {
   padding: 15px 0;
   display: flex;
   justify-content: between;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header-area a {

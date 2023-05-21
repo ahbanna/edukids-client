@@ -116,8 +116,12 @@ import { Tabs, TabList, TabPanel, Tab } from "react-tabs";
 import "./Category.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Category = () => {
+  // toast
+  const notify = () => toast("You have to log in first to view details!");
   const [cats, setCats] = useState([]);
   useEffect(() => {
     fetch("https://eudkids-server.vercel.app/alltoys")
@@ -165,7 +169,10 @@ const Category = () => {
                     <Link
                       to={`https://edu-kids-e7e02.web.app/alltoys/${cat._id}`}
                     >
-                      <button className="view-details">View Details</button>
+                      <button onClick={notify} className="view-details">
+                        View Details
+                      </button>
+                      <ToastContainer autoClose={7000} />
                     </Link>
                   </div>
                 ))}
@@ -188,7 +195,14 @@ const Category = () => {
                       <span>Rating: </span>
                       {cat.rating}
                     </p>
-                    <button className="view-details">View Details</button>
+                    <Link
+                      to={`https://edu-kids-e7e02.web.app/alltoys/${cat._id}`}
+                    >
+                      <button onClick={notify} className="view-details">
+                        View Details
+                      </button>
+                      <ToastContainer autoClose={7000} />
+                    </Link>
                   </div>
                 ))}
             </TabPanel>
@@ -211,7 +225,14 @@ const Category = () => {
                       <span>Rating: </span>
                       {cat.rating}
                     </p>
-                    <button className="view-details">View Details</button>
+                    <Link
+                      to={`https://edu-kids-e7e02.web.app/alltoys/${cat._id}`}
+                    >
+                      <button onClick={notify} className="view-details">
+                        View Details
+                      </button>
+                      <ToastContainer autoClose={7000} />
+                    </Link>
                   </div>
                 ))}
             </TabPanel>
