@@ -57,7 +57,7 @@
 // const Category = () => {
 //   const [cats, setCats] = useState([]);
 //   useEffect(() => {
-//     fetch("http://localhost:5000/alltoys")
+//     fetch("https://eudkids-server.vercel.app/alltoys")
 //       .then((res) => res.json())
 //       .then((result) => {
 //         console.log(result);
@@ -82,7 +82,7 @@
 // const Category = () => {
 //   const [cats, setCats] = useState([]);
 //   useEffect(() => {
-//     fetch("http://localhost:5000/alltoys")
+//     fetch("https://eudkids-server.vercel.app/alltoys")
 //       .then((res) => res.json())
 //       .then((result) => {
 //         console.log(result);
@@ -163,7 +163,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 const Category = () => {
   const [cats, setCats] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/alltoys")
+    fetch("https://eudkids-server.vercel.app/alltoys")
       .then((res) => res.json())
       .then((result) => {
         console.log(result);

@@ -22,7 +22,7 @@ const UpdateToys = () => {
     };
 
     // send data to server starts
-    fetch(`http://localhost:5000/mytoys/${_id}`, {
+    fetch(`https://eudkids-server.vercel.app/mytoys/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
