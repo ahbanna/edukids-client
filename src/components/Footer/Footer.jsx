@@ -24,27 +24,27 @@ const Footer = () => {
               <h4>Follow us :</h4>
               <ul className="social-icon">
                 <li>
-                  <a href="">
+                  <a href="https://twitter.com/home">
                     <FaTwitter></FaTwitter>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.behance.net/">
                     <FaBehance></FaBehance>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/">
                     <FaInstagram></FaInstagram>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://dribbble.com/">
                     <FaDribbble></FaDribbble>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.google.com/account/about/">
                     <FaGoogle></FaGoogle>
                   </a>
                 </li>
