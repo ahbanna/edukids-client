@@ -25,7 +25,7 @@ const ToyDetails = () => {
             </p>
             <p>
               <span>Seller Email: </span>
-              {toydetails.sellerEmail}
+              {toydetails.email}
             </p>
             <p>
               <span>Price: </span>
