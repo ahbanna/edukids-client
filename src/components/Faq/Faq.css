@@ -13,3 +13,8 @@
   background-color: #f0f0f0;
   box-shadow: none;
 }
+@media only screen and (max-width: 576px) {
+  .faq-area img {
+    margin-bottom: 20px;
+  }
+}

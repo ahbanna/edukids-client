@@ -31,3 +31,18 @@
   padding: 5px;
   width: 100%;
 }
+@media only screen and (max-width: 576px) {
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-btn button {
+    margin-top: 0;
+  }
+  .about-content {
+    padding-bottom: 25px;
+  }
+  .about-area {
+    padding-top: 20px;
+  }
+}

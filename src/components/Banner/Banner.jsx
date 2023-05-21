@@ -18,7 +18,9 @@ const Banner = () => {
                   Together We’ll Explore New Things. The best place to your buy
                   dream toys. We provide toys for all age kids.
                 </p>
-                <button>Learn More</button>
+                <div className="learn-more-btn">
+                  <button>Learn More</button>
+                </div>
               </div>
             </div>
           </div>

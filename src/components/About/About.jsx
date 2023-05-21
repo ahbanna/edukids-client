@@ -11,7 +11,7 @@ const About = () => {
     <div className="about-area">
       <div className="container">
         <div className="section-title">
-          <p>KNOW EVERYTHING</p>
+          <p>Know Everything</p>
           <h3>About Us</h3>
         </div>
         <div className="row">

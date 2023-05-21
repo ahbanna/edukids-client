@@ -32,3 +32,26 @@
   border-radius: 20px;
   transition: 0.3s;
 }
+
+@media only screen and (max-width: 576px) {
+  .banner-img {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+  .banner-content h2 {
+    font-size: 34px;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .banner-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .learn-more-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-section .container {
+    padding: 20px 0;
+  }
+}

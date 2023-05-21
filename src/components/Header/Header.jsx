@@ -52,11 +52,11 @@ const Header = () => {
             )}
           </ul>
         </div>
-        <div className="header-login-btn">
+        {/* <div className="header-login-btn">
           <Link to="/login">
             <Button variant="secondary">Login</Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
