@@ -12,7 +12,7 @@ const Login = () => {
   const [error, setError] = useState("");
   useTitle("Login");
 
-  // navigate starts
+  // navigate starts.it use when user successfully login go to desire page
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
