@@ -7,6 +7,7 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 import "./Footer.css";
+import SocialLink from "../Shared/SocialLink/SocialLink";
 
 const Footer = () => {
   return (
@@ -20,9 +21,10 @@ const Footer = () => {
               mission is to provide a wide range of high-quality educational
               toys that not only entertain but also inspire young minds.
             </p>
-            <div className="social-link">
+            <div className="footer-social">
               <h4>Follow us :</h4>
-              <ul className="social-icon">
+              <SocialLink></SocialLink>
+              {/* <ul className="social-icon">
                 <li>
                   <a href="https://twitter.com/home">
                     <FaTwitter></FaTwitter>
@@ -48,7 +50,7 @@ const Footer = () => {
                     <FaGoogle></FaGoogle>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="col-lg-4">

@@ -13,6 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 } */
+a {
+  text-decoration: none !important;
+}
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Section title */
 .section-title {
   text-align: center;
   padding: 30px 0 40px 0;

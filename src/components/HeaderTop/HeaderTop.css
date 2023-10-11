@@ -1,0 +1,31 @@
+.header-top {
+  background: #393d72;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 0;
+}
+.header-top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top-info ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  border-right: 1px solid #1e213e;
+  padding-right: 10px;
+  transition: 0.3s;
+}
+.header-top-info ul li:hover,
+.header-top-info ul li:hover a {
+  color: #ff7479;
+  transition: 0.3s;
+}
+.header-top-info ul li a {
+  color: #fff;
+}
+.header-top-info ul li svg {
+  color: #ff7479;
+  margin: 0 5px 3px 0;
+}

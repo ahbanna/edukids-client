@@ -29,7 +29,7 @@ const Header = () => {
               <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/alltoys">All Toys</Link>
+              <Link to="/alltoys">All Baby Toys</Link>
             </li>
 
             {user?.email ? (
