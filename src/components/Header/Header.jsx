@@ -1,10 +1,37 @@
 import React, { useContext } from "react";
-import { Button, Container, Nav, NavLink, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Container, Image, Nav, Navbar } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import {} from "react-router-dom";
 import "./Header.css";
 import { AuthContext } from "../../providers/AuthProvider";
+import logo from "../../assets/logo.png";
+import Headroom from "react-headroom";
 
 const Header = () => {
+  const NavLinks = [
+    {
+      path: "/",
+      title: "Home",
+    },
+    {
+      path: "/blog",
+      title: "Blog",
+    },
+    {
+      path: "/alltoys",
+      title: "All Toys",
+    },
+  ];
+  const SellerLinks = [
+    {
+      path: "/addtoy",
+      title: "Add A Toy",
+    },
+    {
+      path: "/mytoys",
+      title: "My Toys",
+    },
+  ];
   const { user, logOut } = useContext(AuthContext);
   console.log(user);
   const handleLogOut = () => {
@@ -14,51 +41,45 @@ const Header = () => {
   };
   return (
     <div className="header-area">
-      <div className="container">
-        <div className="header-logo">
-          <Link to="/">
-            <h2>EduKids</h2>
-          </Link>
-        </div>
-        <div className="d-flex align-items-center main-menu">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/alltoys">All Baby Toys</Link>
-            </li>
+      <Headroom>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+          <Container>
+            <NavLink to="/">
+              <Image src={logo} alt="Edu Kids" height="55" />
+            </NavLink>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse
+              id="responsive-navbar-nav"
+              className="justify-content-end "
+            >
+              <Nav className="ml-auto align-items-center">
+                {NavLinks.map(({ path, title }) => (
+                  <NavLink to={path} key={path}>
+                    {title}
+                  </NavLink>
+                ))}
 
-            {user?.email ? (
-              <>
-                <li>
-                  <Link to="/addtoy">Add A Toy</Link>
-                </li>
-                <li>
-                  <Link to="/mytoys">My Toys</Link>
-                </li>
-                <li>
-                  <button className="logout-btn" onClick={handleLogOut}>
-                    Logout
-                  </button>
-                </li>
-              </>
-            ) : (
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            )}
-          </ul>
-        </div>
-        {/* <div className="header-login-btn">
-          <Link to="/login">
-            <Button variant="secondary">Login</Button>
-          </Link>
-        </div> */}
-      </div>
+                {user?.email ? (
+                  <>
+                    {SellerLinks.map(({ path, title }) => (
+                      <NavLink to={path} key={path}>
+                        {title}
+                      </NavLink>
+                    ))}
+                    <Button className="ml-2" onClick={handleLogOut}>
+                      Logout
+                    </Button>
+                  </>
+                ) : (
+                  <NavLink to="/login" className="login-btn">
+                    Login
+                  </NavLink>
+                )}
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </Headroom>
     </div>
   );
 };
