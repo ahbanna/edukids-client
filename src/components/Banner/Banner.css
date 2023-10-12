@@ -1,57 +1,49 @@
-.banner-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.swiper {
+  height: 700px !important;
+}
+.banner-content {
+  position: absolute;
+  top: 31%;
+  width: 40%;
+}
+.banner-content span {
+  text-transform: uppercase;
+  color: #cc3bb5;
+  font-weight: 600;
 }
 .banner-content h2 {
-  color: #253b70;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 5rem;
-}
-.banner-content p {
-  color: #454442;
-  font-size: 22px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
   margin: 20px 0;
 }
-.banner-content button {
-  background: #ff4646;
-  border: navajowhite;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: 600;
-  transition: 0.3s;
+.banner-content p {
+  font-size: 17px;
+  margin-bottom: 30px;
 }
-.banner-content button:hover {
-  background: #253b70;
-  border-radius: 20px;
-  transition: 0.3s;
+.banner-2 .banner-content {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-3 img {
+  margin-left: 5%;
+}
+.banner-3 .banner-content {
+  right: 14%;
+}
+.banner-4 .banner-content {
+  right: 13%;
+  color: #fff;
+}
+.banner-4 .banner-content h2 {
+  color: #fff;
+}
+.banner-4 .banner-content p {
+  color: #d3d3d3;
 }
 
+/* Responsive */
 @media only screen and (max-width: 576px) {
-  .banner-img {
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-  .banner-content h2 {
-    font-size: 34px;
-    line-height: 2rem;
-    text-align: center;
-  }
-  .banner-content p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .learn-more-btn {
-    display: flex;
-    justify-content: center;
-  }
-  .banner-section .container {
-    padding: 20px 0;
-  }
 }

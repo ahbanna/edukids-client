@@ -1,31 +1,134 @@
+// import React from "react";
+// import bannerImg from "../../assets/banner.jpg";
+// import "./Banner.css";
+
+// const Banner = () => {
+//   return (
+//     <div className="banner-section">
+//       <div
+//         className="banner-img"
+//         style={{ backgroundImage: `url(${bannerImg})` }}
+//       >
+//         <div className="container">
+//           <div className="row">
+//             <div className="col-lg-6">
+//               <div className="banner-content">
+//                 <h2>Extraordinary Learning Toys</h2>
+//                 <p>
+//                   Together We’ll Explore New Things. The best place to your buy
+//                   dream toys. We provide toys for all age kids.
+//                 </p>
+//                 <div className="learn-more-btn">
+//                   <button>Learn More</button>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Banner;
+
 import React from "react";
-import bannerImg from "../../assets/banner.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Mousewheel, Pagination } from "swiper/modules";
+import banner1 from "../../assets/banner/banner1.jpg";
+import banner2 from "../../assets/banner/banner2.jpg";
+import banner3 from "../../assets/banner/banner3.png";
+import banner4 from "../../assets/banner/banner4.png";
 import "./Banner.css";
+import BannerTitle from "../Shared/BannerTitle/BannerTitle";
+import { Container } from "react-bootstrap";
 
 const Banner = () => {
   return (
-    <div className="banner-section">
-      <div
-        className="banner-img"
-        style={{ backgroundImage: `url(${bannerImg})` }}
+    <div>
+      {/* <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      > */}
+      <Swiper
+        direction={"vertical"}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+        className="mySwiper"
       >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="banner-content">
-                <h2>Extraordinary Learning Toys</h2>
-                <p>
-                  Together We’ll Explore New Things. The best place to your buy
-                  dream toys. We provide toys for all age kids.
-                </p>
-                <div className="learn-more-btn">
-                  <button>Learn More</button>
-                </div>
-              </div>
+        <SwiperSlide className="single-slide">
+          <img src={banner1} alt="" srcset="" />
+          <Container>
+            <div className="banner-content">
+              <BannerTitle
+                title="Where Learning Meets Fun and Innovation"
+                text="At our store, we believe in the power of education to shape a better tomorrow. Our educational toys are carefully selected to stimulate curiosity, critical thinking, and a passion for knowledge."
+                buttonText="Shop Now"
+                buttonLink="/alltoys"
+              ></BannerTitle>
             </div>
-          </div>
-        </div>
-      </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide className="single-slide banner-2">
+          <img src={banner2} alt="" srcset="" />
+          <Container>
+            <div className="banner-content">
+              <BannerTitle
+                title="Inspiring Curious Minds, One Toy at a Time"
+                text="Through interactive and educational play, we aim to spark a lifelong love for learning. Explore our store and embark on a journey where wonder and knowledge collide."
+                buttonText="Shop Now"
+                buttonLink="/alltoys"
+              ></BannerTitle>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide
+          className="single-slide banner-3"
+          style={{ backgroundColor: "#3498db" }}
+        >
+          <img src={banner3} alt="" srcset="" />
+          <Container>
+            <div className="banner-content">
+              <BannerTitle
+                title="Give Your Kids the Best Possible Start"
+                text="Every toy is thoughtfully selected to encourage cognitive, emotional, and social development in children. We are committed to providing families with high-quality, engaging toys. "
+                buttonText="Shop Now"
+                buttonLink="/alltoys"
+              ></BannerTitle>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide className="single-slide banner-4">
+          <img src={banner4} alt="" srcset="" />
+          <Container>
+            <div className="banner-content">
+              <BannerTitle
+                title="Dive Into the Greatness of Kid Learning"
+                text=" Each toy on our shelves is a gateway to exploration, encouraging children to delve into the wonders of science, mathematics, creativity, and more."
+                buttonText="Shop Now"
+                buttonLink="/alltoys"
+              ></BannerTitle>
+            </div>
+          </Container>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

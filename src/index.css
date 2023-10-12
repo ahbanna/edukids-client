@@ -1,5 +1,5 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  font-family: "Rubik", sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,7 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-} */
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Rubik", sans-serif !important;
+}
 a {
   text-decoration: none !important;
 }
@@ -20,9 +24,30 @@ ul {
   padding: 0 !important;
   margin: 0 !important;
 }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #101218;
+}
 .container {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+/* Custom button */
+.custom-button {
+  border-radius: 50px;
+  background: #19469b;
+  padding: 15px 40px;
+  transition: 0.3s;
+  border: none;
+  position: relative;
+  background: linear-gradient(90deg, #19469b 15%, #cc3bb5 100%);
+  font-weight: 600;
+  min-width: 90px;
+  color: #fff !important;
+  text-align: center;
 }
 /* Section title */
 .section-title {
