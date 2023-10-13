@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.about-title span {
+/* .about-title span {
   color: #cc3bb5;
   font-weight: 600;
   font-size: 20px;
@@ -50,7 +50,7 @@
 }
 .about-content p {
   color: #707070;
-}
+} */
 
 .about-list li {
   font-size: 18px;

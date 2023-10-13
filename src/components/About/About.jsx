@@ -57,6 +57,7 @@ import aboutImg from "../../assets/about/about-img.png";
 import quote from "../../assets/about/quote.png";
 import "./About.css";
 import { FaAward } from "react-icons/fa";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 
 const About = () => {
   return (
@@ -66,7 +67,17 @@ const About = () => {
           <img src={aboutImg} alt="" srcset="" />
         </div>
         <div className="about-content">
-          <div className="about-title">
+          <SectionTitle
+            subtitle="About Edukids"
+            title="Special Attention For Every Child"
+            text="    Our mission is to inspire young minds and foster their growth
+            through play. We understand the importance of early childhood
+            development and the role that toys play in shaping a child's
+            learning journey. That's why we handpick each toy in our collection
+            to ensure it not only entertains but also stimulates cognitive,
+            motor, and social skills."
+          ></SectionTitle>
+          {/* <div className="about-title">
             <span>About Edukids</span>
             <h3>Special Attention For Every Child</h3>
           </div>
@@ -77,7 +88,7 @@ const About = () => {
             learning journey. That's why we handpick each toy in our collection
             to ensure it not only entertains but also stimulates cognitive,
             motor, and social skills.
-          </p>
+          </p> */}
           <ul className="about-list">
             <li>
               <FaAward></FaAward> <span>Age-Appropriate</span> Learning

@@ -1,0 +1,30 @@
+.creative-area {
+  padding: 80px 0;
+  position: relative;
+}
+.creative-area .container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 20px;
+  align-items: center;
+}
+.creative-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.creative-img img:first-child {
+  border-radius: 0px 0px 500px 0px;
+}
+.creative-img img:last-child {
+  border-radius: 500px 0px 0px 0px;
+}
+.creative-area .section-title {
+  font-size: 34px;
+}
+.handshake-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
+}

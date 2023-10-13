@@ -1,0 +1,22 @@
+.section-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+.section-subtitle {
+  color: #cc3bb5;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #cc3bb521;
+  padding: 10px 25px;
+  line-height: 1;
+  z-index: 1;
+  margin-bottom: 10px;
+  border-left: 2px solid #cc3bb5;
+}
+.section-text {
+  color: #787878;
+  /* color: red; */
+}
