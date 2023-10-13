@@ -34,17 +34,15 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Mousewheel, Pagination } from "swiper/modules";
+
 import banner1 from "../../assets/banner/banner1.jpg";
 import banner2 from "../../assets/banner/banner2.jpg";
 import banner3 from "../../assets/banner/banner3.png";
 import banner4 from "../../assets/banner/banner4.png";
+import banner5 from "../../assets/banner/banner5.png";
 import "./Banner.css";
 import BannerTitle from "../Shared/BannerTitle/BannerTitle";
 import { Container } from "react-bootstrap";
@@ -120,7 +118,20 @@ const Banner = () => {
           <Container>
             <div className="banner-content">
               <BannerTitle
-                title="Dive Into the Greatness of Kid Learning"
+                title="Play & Learn How to Create New Things"
+                text=" Each toy on our shelves is a gateway to exploration, encouraging children to delve into the wonders of science, mathematics, creativity, and more."
+                buttonText="Shop Now"
+                buttonLink="/alltoys"
+              ></BannerTitle>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide className="single-slide">
+          <img src={banner5} alt="" srcset="" />
+          <Container>
+            <div className="banner-content">
+              <BannerTitle
+                title="Empowering Kids from Small Age Towards Vision"
                 text=" Each toy on our shelves is a gateway to exploration, encouraging children to delve into the wonders of science, mathematics, creativity, and more."
                 buttonText="Shop Now"
                 buttonLink="/alltoys"

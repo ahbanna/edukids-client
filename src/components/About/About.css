@@ -1,6 +1,5 @@
-.about-area {
+/* .about-area {
   padding-bottom: 40px;
-  /* background: #f7f7fd; */
   background: #f8f9fa;
 }
 .about-content p {
@@ -30,6 +29,65 @@
   border-radius: 8px;
   padding: 5px;
   width: 100%;
+} */
+.about-area {
+  background: #fff8eb;
+  padding: 60px 0;
+}
+.about-area .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-title span {
+  color: #cc3bb5;
+  font-weight: 600;
+  font-size: 20px;
+}
+.about-title h3 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.about-content p {
+  color: #707070;
+}
+
+.about-list li {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.about-list li span,
+.about-list li svg {
+  color: #8dc63f;
+  font-weight: 700;
+}
+.about-list li:nth-of-type(4n + 2) span,
+.about-list li:nth-of-type(4n + 2) svg {
+  color: #92278f;
+}
+.about-list li:nth-of-type(4n + 3) span,
+.about-list li:nth-of-type(4n + 3) svg {
+  color: #ff5200;
+}
+.about-list li:nth-of-type(4n + 4) span,
+.about-list li:nth-of-type(4n + 4) svg {
+  color: #00bfff;
+}
+.about-quote {
+  padding: 15px 0;
+  border-bottom: 1px solid #ffd7a1;
+  border-top: 1px solid #ffd7a1;
+  display: flex;
+  margin-top: 40px;
+}
+.about-quote .content {
+  font-size: 24px;
+  color: #ff5200;
+  margin-left: 15px;
+}
+.about-quote .content .name {
+  font-size: 18px;
+  color: #000;
 }
 @media only screen and (max-width: 576px) {
   .contact-btn {
