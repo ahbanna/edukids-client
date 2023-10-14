@@ -49,7 +49,7 @@ import { Container } from "react-bootstrap";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="banner-area">
       {/* <Swiper
         slidesPerView={4}
         spaceBetween={30}

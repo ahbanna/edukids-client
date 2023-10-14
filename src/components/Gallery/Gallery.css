@@ -1,8 +1,61 @@
-.gallery-area {
+/* .gallery-area {
   padding: 40px 0;
 }
 .last {
   height: 333px;
+} */
+.gallery-area {
+  padding: 80px 0;
+}
+.gallery-area .section-area {
+  text-align: center;
+}
+.gallery-area .swiper-slide img {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery-area .swiper-slide-next + div img {
+  filter: none !important;
+}
+.gallery-area .swiper-slide:hover img {
+  filter: none;
+  transition: 0.3s;
+}
+.gallery-area .swiper {
+  padding: 20px 0 80px 0;
+}
+.gallery-area .swiper-slide {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.gallery-area .swiper-slide img {
+  width: 100%;
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 5px;
+}
+.gallery-area .swiper-button-prev,
+.gallery-area .swiper-button-next {
+  top: unset !important;
+  bottom: 0% !important;
+  height: 40px;
+  width: 40px;
+  background: #19469b;
+  border-radius: 50%;
+  color: #fff;
+}
+.gallery-area .swiper-button-prev {
+  left: 47%;
+}
+.gallery-area .swiper-button-next {
+  right: 47%;
+}
+.gallery-area .swiper-button-prev::after,
+.gallery-area .swiper-button-next::after {
+  font-size: 16px !important;
+}
+.gallery-area .swiper-button-next:hover,
+.gallery-area .swiper-button-prev:hover {
+  background: #cc3bb5;
+  transition: 0.3s;
 }
 @media only screen and (max-width: 576px) {
   .section-title h3 {

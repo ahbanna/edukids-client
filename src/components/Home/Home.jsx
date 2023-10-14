@@ -6,6 +6,7 @@ import useTitle from "../../hooks/useTitle";
 import Faq from "../Faq/Faq";
 import Category from "../Category/Category";
 import Creative from "../Crerative/Creative";
+import Partners from "../Partners/Partners";
 
 const Home = () => {
   useTitle("Home");
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner></Banner>
       <About></About>
       <Creative></Creative>
+      <Partners></Partners>
       <Gallery></Gallery>
       <Category></Category>
       <Faq></Faq>
