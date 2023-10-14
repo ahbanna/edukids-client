@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Sarah Johnson",
+    "image": "https://i.ibb.co/tZt3MzZ/team9.png",
+    "feedback": "My kids adore the toys we bought from this website! The quality is top-notch, and the delivery was super fast. Highly recommended!",
+    "rating": 4.5
+  },
+  {
+    "name": "David Parker",
+    "image": "https://i.ibb.co/DkHwDqN/team2.png",
+    "feedback": "The variety of toys here is impressive. I found the perfect birthday gift for my niece. She couldn't be happier!",
+    "rating": 4
+  },
+  {
+    "name": "Emma White",
+    "image": "https://i.ibb.co/sshB9JF/01.jpg",
+    "feedback": "Excellent customer service! The team helped me choose age-appropriate toys for my twins. Will definitely shop here again!",
+    "rating": 5
+  },
+  {
+    "name": "Michael Lee",
+    "image": "https://i.ibb.co/Fh1KL3B/4-2.png",
+    "feedback": "I am amazed by the educational toys available here. My son is learning while having fun. Thank you for this wonderful collection!",
+    "rating": 5
+  },
+  {
+    "name": "Olivia Davis",
+    "image": "https://i.ibb.co/mzD8wGJ/5-2.png",
+    "feedback": "The toys are exactly as described, and the prices are reasonable. My daughter loves her new toys! Great experience overall.",
+    "rating": 4
+  },
+  {
+    "name": "Daniel Wilson",
+    "image": "https://i.ibb.co/hm98sQ9/6.png",
+    "feedback": "I appreciate the quick response from customer support. They resolved my query promptly. Happy with the service!",
+    "rating": 4.8
+  },
+  {
+    "name": "Sophia Miller",
+    "image": "https://i.ibb.co/tZjG3xJ/team4.png",
+    "feedback": "The toys arrived well-packaged and in perfect condition. The website offers a wide range of options for all age groups. Impressed!",
+    "rating": 4.2
+  },
+  {
+    "name": "Ethan Brown",
+    "image": "https://i.ibb.co/PYn80Y7/team6.png",
+    "feedback": "This website made toy shopping for my grandkids a breeze. The user-friendly interface and detailed product descriptions are a plus!",
+    "rating": 4
+  },
+  {
+    "name": "Ava Johnson",
+    "image": "https://i.ibb.co/SrtVFXH/team7.png",
+    "feedback": "I received exactly what I ordered, and the toys exceeded my expectations. My kids are thrilled, and so am I. Thank you!",
+    "rating": 4.6
+  },
+  {
+    "name": "Noah Clark",
+    "image": "https://i.ibb.co/9gCKH1M/team8.png",
+    "feedback": "The toys are durable and safe for my toddler. I feel confident about the quality. I will be a returning customer for sure!",
+    "rating": 5
+  }
+]

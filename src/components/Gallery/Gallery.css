@@ -58,7 +58,7 @@
   transition: 0.3s;
 }
 @media only screen and (max-width: 576px) {
-  .section-title h3 {
+  /* .section-title h3 {
     font-size: 24px;
   }
   .section-title {
@@ -70,5 +70,5 @@
   }
   .gallery-area {
     padding: 20px 0 5px 0;
-  }
+  } */
 }
