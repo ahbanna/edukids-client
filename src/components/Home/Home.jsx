@@ -8,6 +8,7 @@ import Category from "../Category/Category";
 import Creative from "../Crerative/Creative";
 import Partners from "../Partners/Partners";
 import Testimonial from "../Testimonial/Testimonial";
+import Video from "../Video/Video";
 
 const Home = () => {
   useTitle("Home");
@@ -19,6 +20,7 @@ const Home = () => {
       <Partners></Partners>
       <Gallery></Gallery>
       <Testimonial></Testimonial>
+      <Video></Video>
       <Category></Category>
       <Faq></Faq>
     </div>
