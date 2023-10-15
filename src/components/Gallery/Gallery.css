@@ -6,6 +6,10 @@
 } */
 .gallery-area {
   padding: 80px 0;
+  background-image: url(../../assets/gallery/gallery-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .gallery-area .section-area {
   text-align: center;

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "question": "What types of educational toys do you sell?",
+    "answer": "We offer a wide range of educational toys including puzzles, STEM kits, art and craft supplies, building blocks, and interactive learning games designed to enhance children's cognitive and motor skills."
+  },
+  {
+    "id": 1,
+    "question": "Are your toys safe for children?",
+    "answer": "Yes, all our toys are tested and certified to meet the highest safety standards. We ensure that our products are made from non-toxic materials and do not have any small parts that can be a choking hazard for children."
+  },
+  {
+    "id": 2,
+    "question": "What age group are your toys suitable for?",
+    "answer": "Our educational toys cater to various age groups, from infants to teenagers. Each product description includes age recommendations to help you choose toys that are developmentally appropriate for your child."
+  },
+  {
+    "id": 3,
+    "question": "Do you offer international shipping?",
+    "answer": "Yes, we offer international shipping. We deliver our educational toys to several countries worldwide. Shipping costs and delivery times may vary based on the destination country. You can check the shipping details during the checkout process."
+  },
+  {
+    "id": 4,
+    "question": "Can I return or exchange a toy if my child doesn't like it?",
+    "answer": "Certainly! We have a hassle-free return and exchange policy. If your child is not satisfied with the toy, you can return it within 30 days of purchase for a full refund or exchange it for another product. Please check our Returns & Exchanges page for more details."
+  },
+  {
+    "id": 5,
+    "question": "Do you offer gift wrapping services?",
+    "answer": "Yes, we offer gift wrapping services for a small additional fee. During the checkout process, you can select the gift wrapping option and add a personalized message. We will ensure that your educational toy is beautifully wrapped and ready to be gifted."
+  },
+  {
+    "id": 6,
+    "question": "How can I contact your customer support?",
+    "answer": "You can reach our customer support team by emailing support@example.com or calling our toll-free number at 1-800-123-4567. Our dedicated team is available to assist you with any queries, concerns, or assistance you may need regarding our educational toys or your order."
+  }
+]

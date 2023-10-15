@@ -1,10 +1,20 @@
+.testimonial-area {
+  background-image: url(../../assets/testimonial-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
+}
 .testimonial-area .section-area {
   text-align: center;
 }
 .single-testimonial {
-  background: #f8f8f8;
+  background: #f8e6f5;
   border-radius: 50px 10px;
   padding: 30px;
+}
+.single-testimonial p {
+  margin-top: 8px;
 }
 .rating-quote {
   display: flex;

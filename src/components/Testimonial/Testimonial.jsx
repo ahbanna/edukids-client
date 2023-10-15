@@ -24,7 +24,7 @@ const Testimonial = () => {
       <SectionTitle
         title="Customer's Feedback"
         subtitle="Testimonial"
-        text=""
+        text="Heartwarming Stories from Happy Families. Explore the magic of play through our customers' joyful experiences at EduKids"
       ></SectionTitle>
       <Container className="all-testimonials">
         <Swiper
@@ -55,9 +55,7 @@ const Testimonial = () => {
           }}
           className="mySwiper"
         >
-          {/* <SwiperSlide> */}
           {testimonials.map((testimonial) => (
-            // <div className="single-testimonial">
             <SwiperSlide>
               <div className="single-testimonial">
                 <div className="rating-quote">
@@ -79,9 +77,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
-            // </div>
           ))}
-          {/* </SwiperSlide> */}
         </Swiper>
       </Container>
     </div>

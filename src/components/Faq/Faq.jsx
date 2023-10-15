@@ -1,38 +1,60 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Faq.css";
-import { Accordion } from "react-bootstrap";
+import { Accordion, Container } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import faqImg1 from "../../assets/faq/img1.png";
+import faqImg2 from "../../assets/faq/img2.png";
+import faqImg3 from "../../assets/faq/img3.png";
+import faqImg4 from "../../assets/faq/img4.png";
 
 const Faq = () => {
+  const [faqs, setFaqs] = useState([]);
+  useEffect(() => {
+    fetch("faq.json")
+      .then((res) => res.json())
+      .then((data) => setFaqs(data));
+  }, []);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <div className="faq-area">
-      <div className="container">
-        <div className="section-title">
-          <p>Find Your Answer From Here</p>
-          <h3>Frequently Asked Questions</h3>
-        </div>
-        <div className="row">
-          <div className="col-lg-3" data-aos="zoom-in-up">
-            <img
-              src="https://images.pexels.com/photos/8923952/pexels-photo-8923952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
+      <Container>
+        <SectionTitle
+          title=" Find Your Answer From Here"
+          subtitle="Frequently Asked Questions"
+          text="We're here to help. Get in touch and we'll get back to you as soon as we can."
+        ></SectionTitle>
+        <div className="faq-content">
+          <div className="faq-image" data-aos="zoom-in-up">
+            <img src={faqImg1} alt="" srcset="" />
           </div>
-          <div className="col-lg-3" data-aos="zoom-in-down">
-            <img
-              src="https://images.pexels.com/photos/5426391/pexels-photo-5426391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-          </div>
-          <div className="col-lg-6 faq-item">
+          <div className="faq-list">
             <Accordion defaultActiveKey="0">
+              {faqs.map((faq) => (
+                <Accordion.Item eventKey={faq.id.toString()} key={faq.id}>
+                  <Accordion.Header>{faq.question}</Accordion.Header>
+                  <Accordion.Body>{faq.answer}</Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+            {/* {faqs.map((faq) => (
+              <div>
+                <Accordion defaultActiveKey={faq.id}>
+                  <Accordion.Item eventKey={faq.id}>
+                    <Accordion.Header>{faq.question}</Accordion.Header>
+                    <Accordion.Body>{faq.answer}</Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            ))} */}
+            {/* <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  What is the age range of toys available in the store?{" "}
+                  What is the age range of toys available in the store?
                 </Accordion.Header>
                 <Accordion.Body>
                   The age range of toys available in the educational toy selling
@@ -92,10 +114,10 @@ const Faq = () => {
                   pay any shipping fees.
                 </Accordion.Body>
               </Accordion.Item>
-            </Accordion>
+            </Accordion> */}
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
