@@ -1,11 +1,20 @@
 .footer-area {
-  background: #6232d6;
+  /* background: #6232d6; */
+  background-image: url(/src/assets/footer/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding: 40px 0 1px 0;
+  background-color: #e3f7fc;
+  position: relative;
+}
+.footer-main {
+  padding: 80px 0;
 }
 .footer-area h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   position: relative;
   padding-bottom: 20px;
 }
@@ -19,13 +28,41 @@
   background: #804bff;
 }
 .footer-area p {
-  color: #fff;
+  /* color: #fff; */
   margin: 15px 0;
 }
 .footer-social h4 {
-  color: #fff;
+  /* color: #fff; */
   font-size: 16px;
   font-weight: 700;
+}
+.footer-area .social-icon li {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 55% 45% 62% 38% / 42% 40% 60% 58%;
+  transition: 0.5s;
+}
+.footer-area .social-link ul li:hover {
+  transition: 0.5s;
+  border-radius: 42% 58% 43% 57% / 42% 40% 60% 58%;
+  background: #000;
+  transform: rotate(0deg);
+}
+.footer-area .twitter {
+  background: #55acee;
+}
+.footer-area .facebook {
+  background: #3b5998;
+}
+.footer-area .behance {
+  background: #0056ff;
+}
+.footer-area .instagram {
+  background: #e4405f;
+}
+.footer-area .dribble {
+  background: #c1346b;
 }
 
 .footer-contact {
@@ -34,28 +71,44 @@
 .footer-contact ul {
   list-style: none;
   padding: 0;
-  color: #fff;
+  /* color: #fff; */
 }
-.footer-subscribe form input {
-  height: 45px;
-  width: 100%;
-  padding: 0px 20px;
-  background: none;
-  color: #fff;
-  border: 1px solid #7346e0;
-  margin-bottom: 25px;
+.footer-contact ul li {
+  margin-top: 7px;
 }
-.footer-subscribe form .submit-btn input {
-  width: 50%;
-  background: #ff4646;
-  margin-top: -10px;
+.loaction {
+  margin-left: 21px;
 }
-.copyright {
-  border-top: 1px solid #804bff;
+.footer-gril {
+  position: absolute;
+  bottom: 15%;
+  left: 36%;
 }
-.copyright p {
-  text-align: center;
+.footer-ball {
+  position: absolute;
+  animation: ballAnimation 6s infinite;
+  bottom: 22%;
+  right: 30%;
 }
+@keyframes ballAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #606060;
+}
+.copyright-text p {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 576px) {
   .footer-contact {
     padding-left: 0;

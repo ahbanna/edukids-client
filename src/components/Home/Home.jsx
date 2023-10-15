@@ -10,6 +10,7 @@ import Partners from "../Partners/Partners";
 import Testimonial from "../Testimonial/Testimonial";
 import Video from "../Video/Video";
 import Newsletter from "../Newsletter/Newsletter";
+import Service from "../Service/Service";
 
 const Home = () => {
   useTitle("Home");
@@ -18,12 +19,13 @@ const Home = () => {
       <Banner></Banner>
       <About></About>
       <Creative></Creative>
-      <Partners></Partners>
+      <Service></Service>
       <Gallery></Gallery>
       <Testimonial></Testimonial>
       <Video></Video>
       <Category></Category>
       <Faq></Faq>
+      <Partners></Partners>
       <Newsletter></Newsletter>
     </div>
   );

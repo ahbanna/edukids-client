@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Worldwide Delivery",
+    "desc": "On order over $150-7 days",
+    "image": "https://i.ibb.co/PTqYr7X/serviceimg-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Great Saving",
+    "desc": "How to save money?",
+    "image": "https://i.ibb.co/GtGZQL7/serviceimg-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Gift Voucher",
+    "desc": "Good Gifts for Good Relations!",
+    "image": "https://i.ibb.co/RDy0NtG/serviceimg-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Money Back Guarantee",
+    "desc": "Send within 30 days",
+    "image": "https://i.ibb.co/GtGZQL7/serviceimg-2.png"
+  },
+  {
+    "id": 5,
+    "title": "24X7 Support",
+    "desc": "Call us 24/7 at 000-123-456",
+    "image": "https://i.ibb.co/9GPkFyj/serviceimg-4.png"
+  },
+  {
+    "id": 6,
+    "title": "Shopping Guide",
+    "desc": "Shopping guide here",
+    "image": "https://i.ibb.co/Hntq3Zs/serviceimg-5.png"
+  }
+]

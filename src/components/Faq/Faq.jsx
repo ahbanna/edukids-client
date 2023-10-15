@@ -8,6 +8,7 @@ import faqImg1 from "../../assets/faq/img1.png";
 import faqImg2 from "../../assets/faq/img2.png";
 import faqImg3 from "../../assets/faq/img3.png";
 import faqImg4 from "../../assets/faq/img4.png";
+import faqImg5 from "../../assets/faq/classworks.webp";
 
 const Faq = () => {
   const [faqs, setFaqs] = useState([]);

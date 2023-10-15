@@ -28,8 +28,13 @@
   border-radius: 50px;
   top: 8px;
 }
-.newslettr-right-img {
+.newsletter-right-img {
   position: absolute;
   right: 7%;
   top: 11%;
+}
+.newsletter-left-img {
+	position: absolute;
+	top: 59%;
+	left: 32%;
 }

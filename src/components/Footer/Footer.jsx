@@ -1,19 +1,17 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaBehance,
-  FaInstagram,
-  FaDribbble,
-  FaGoogle,
-} from "react-icons/fa";
 import "./Footer.css";
 import SocialLink from "../Shared/SocialLink/SocialLink";
+import { IoHome } from "react-icons/io5";
+import { FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
+import payImg from "../../assets/footer/pay.png";
+import footerGirlImg from "../../assets/footer/footer-girl.avif";
+import ballImg from "../../assets/footer/ball.png";
 
 const Footer = () => {
   return (
     <div className="footer-area">
       <div className="container">
-        <div className="row">
+        <div className="row footer-main">
           <div className="col-lg-4">
             <h3>About EduKids</h3>
             <p>
@@ -55,30 +53,50 @@ const Footer = () => {
           </div>
           <div className="col-lg-4">
             <div className="footer-contact">
-              <h3>Contact</h3>
+              <h3>Get in touch</h3>
               <ul>
-                <li>Saya Bithi, H#10, R#12</li>
-                <li>Dhaka, Bangladesh</li>
-                <li>Phone: +88 01911 000 000</li>
-                <li>Email: alhasanulbanna@gmail.com</li>
+                <li>
+                  <IoHome></IoHome> Saya Bithi, H#10, R#12
+                </li>
+                <li className="loaction"> Dhaka, Bangladesh</li>
+                <li>
+                  <a href="tel:+8801723659531">
+                    <FaPhoneAlt></FaPhoneAlt> Phone: +88 01911 000 000
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:alhasanulbanna@gmail.com">
+                    <FaRegEnvelope></FaRegEnvelope> Email:
+                    alhasanulbanna@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-4 footer-subscribe">
-            <h3>Newsletter Subscription</h3>
-            <p>
-              Enter your email and get latest updates and offers subscribe us
-            </p>
+            <h3>Keep in touch</h3>
             {/* <form action="">
               <input type="text" name="" id="" placeholder="Enter Your Email" />
               <div className="submit-btn">
                 <input type="submit" value="Subscribe Now" />
               </div>
             </form> */}
+            <SocialLink></SocialLink>
           </div>
         </div>
-        <div className="copyright">
-          <p>© 2023 EduKids. All rights reserved.</p>
+        <div className="footer-gril">
+          <img src={footerGirlImg} alt="" srcset="" />
+        </div>
+        <div className="footer-ball">
+          <img src={ballImg} alt="" srcset="" />
+        </div>
+        <div className="footer-bottom">
+          <div className="copyright-text">
+            <p>© 2023 EduKids. All rights reserved.</p>
+          </div>
+          <div className="payment-method">
+            <img src={payImg} alt="" />
+          </div>
         </div>
       </div>
     </div>

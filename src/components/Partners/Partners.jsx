@@ -69,6 +69,7 @@ const Partners = () => {
           </SwiperSlide>
         </Swiper>
       </Container>
+      <div className="circle-animation"></div>
     </div>
   );
 };

@@ -9,10 +9,13 @@
   margin-right: 15px;
 }
 .social-icon li:hover a {
-  color: #ff4646;
+  /* color: #ff4646; */
   transition: 0.3s;
 }
 .social-icon li a {
   color: #fff;
-  /* font-size: 16px; */
+}
+.social-link ul li:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
