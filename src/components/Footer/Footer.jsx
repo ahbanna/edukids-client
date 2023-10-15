@@ -69,12 +69,12 @@ const Footer = () => {
             <p>
               Enter your email and get latest updates and offers subscribe us
             </p>
-            <form action="">
+            {/* <form action="">
               <input type="text" name="" id="" placeholder="Enter Your Email" />
               <div className="submit-btn">
                 <input type="submit" value="Subscribe Now" />
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
         <div className="copyright">

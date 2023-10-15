@@ -9,6 +9,7 @@ import Creative from "../Crerative/Creative";
 import Partners from "../Partners/Partners";
 import Testimonial from "../Testimonial/Testimonial";
 import Video from "../Video/Video";
+import Newsletter from "../Newsletter/Newsletter";
 
 const Home = () => {
   useTitle("Home");
@@ -23,6 +24,7 @@ const Home = () => {
       <Video></Video>
       <Category></Category>
       <Faq></Faq>
+      <Newsletter></Newsletter>
     </div>
   );
 };
