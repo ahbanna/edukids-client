@@ -20,3 +20,41 @@
   color: #787878;
   /* color: red; */
 }
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 42px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-area {
+    text-align: center;
+  }
+  .section-title {
+    font-size: 38px;
+    margin: 10px 0;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-area {
+    text-align: center;
+  }
+  .section-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .section-area {
+    text-align: center;
+  }
+  .section-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+}

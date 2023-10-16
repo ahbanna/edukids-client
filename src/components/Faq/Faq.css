@@ -3,16 +3,15 @@
 }
 .faq-content {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-column-gap: 30px;
   margin-top: 30px;
 }
 .faq-area img {
   width: 100%;
-  border-radius: 50%;
-  height: 600px;
-  width: auto;
+  /* border-radius: 50%; */
+  height: auto;
 }
 .faq-area {
   padding: 30px 0 80px 0;
@@ -20,7 +19,6 @@
 .faq-image {
   position: relative;
 }
-
 .faq-image::before {
   position: absolute;
   content: "";
@@ -87,6 +85,9 @@
   box-shadow: none;
   font-weight: 600;
 }
+.faq-list {
+  width: 94%;
+}
 
 /*  */
 /* .accordion-item:first-of-type .accordion-button {
@@ -121,8 +122,55 @@
   background-repeat: no-repeat;
   border-color: #fff;
 }
-@media only screen and (max-width: 576px) {
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
   .faq-area img {
-    margin-bottom: 20px;
+    width: 100%;
+  }
+  .faq-list {
+    width: 100%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .faq-list {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .faq-image {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .faq-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .faq-list {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .faq-image {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .faq-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .faq-list {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .accordion-button {
+    font-size: 14px;
   }
 }

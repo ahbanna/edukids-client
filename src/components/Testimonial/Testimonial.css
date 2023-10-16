@@ -72,3 +72,40 @@
   background: #cc3bb5;
   transition: 0.3s;
 }
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area {
+    padding: 50px 0 20px 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    right: 6% !important;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .testimonial-area {
+    padding: 50px 0 0 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    right: 8% !important;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .testimonial-area {
+    padding: 50px 0;
+  }
+  .testimonial-area .swiper {
+    padding: 40px 0 0 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    display: none;
+  }
+  .testimonial-area .swiper-button-next {
+    display: none;
+  }
+}

@@ -50,7 +50,7 @@
   left: 47%;
 }
 .gallery-area .swiper-button-next {
-  right: 47%;
+  right: 46%;
 }
 .gallery-area .swiper-button-prev::after,
 .gallery-area .swiper-button-next::after {
@@ -61,18 +61,42 @@
   background: #cc3bb5;
   transition: 0.3s;
 }
-@media only screen and (max-width: 576px) {
-  /* .section-title h3 {
-    font-size: 24px;
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .gallery-area .swiper-button-next {
+    right: 44%;
   }
-  .section-title {
-    padding: 0px 0 35px 0;
-    position: relative;
-  }
-  .section-title p {
-    letter-spacing: 4px;
-  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
   .gallery-area {
-    padding: 20px 0 5px 0;
-  } */
+    padding: 60px 0;
+  }
+  .gallery-area .swiper-button-next {
+    right: 42%;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .gallery-area {
+    padding: 60px 0;
+  }
+  .gallery-area .swiper-button-prev {
+    left: 42%;
+  }
+  .gallery-area .swiper-button-next {
+    right: 44%;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .gallery-area {
+    padding: 60px 0 0 0;
+  }
+  .gallery-area .swiper-button-prev,
+  .gallery-area .swiper-button-next {
+    display: none;
+  }
 }

@@ -39,3 +39,46 @@
 .service-desc {
   color: #666;
 }
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service-title {
+    font-size: 16px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .service-area {
+    padding: 60px 0;
+  }
+  .service-area .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-title {
+    font-size: 16px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .service-area {
+    padding: 60px 0;
+  }
+  .service-area .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-title {
+    font-size: 15px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .service-area {
+    padding: 60px 0;
+  }
+  .service-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-title {
+    font-size: 15px;
+  }
+}

@@ -28,7 +28,7 @@ const Partners = () => {
           text="More Than Your Average Toy Store"
         ></SectionTitle>
         <Swiper
-          slidesPerView={5}
+          // slidesPerView={5}
           grid={{
             rows: 1,
           }}
@@ -39,6 +39,28 @@ const Partners = () => {
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            576: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1201: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
           }}
           modules={[Grid, Pagination, Autoplay]}
           className="mySwiper"

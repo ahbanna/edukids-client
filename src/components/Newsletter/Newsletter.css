@@ -4,6 +4,9 @@
   position: relative;
   background-color: #fff8eb;
 }
+.newsletter-area .container {
+  position: relative;
+}
 .newsletter-form {
   position: relative;
   display: block;
@@ -30,11 +33,86 @@
 }
 .newsletter-right-img {
   position: absolute;
-  right: 7%;
-  top: 11%;
+  right: 0%;
+  top: 0%;
+}
+.newsletter-right-img img {
+  width: 75%;
 }
 .newsletter-left-img {
-	position: absolute;
-	top: 59%;
-	left: 32%;
+  position: absolute;
+  bottom: -5%;
+  left: 21%;
+}
+/* ----------------- RESPONSIVE starts ----------- */
+/* Extra large */
+@media (min-width: 1400px) {
+  .newsletter-left-img {
+    left: 25%;
+  }
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .newsletter-left-img {
+    left: 15%;
+  }
+  .newsletter-right-img {
+    top: 26%;
+  }
+  .newsletter-right-img img {
+    width: 50%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter-left-img {
+    left: 3%;
+  }
+  .newsletter-right-img {
+    top: -22%;
+  }
+  .newsletter-right-img img {
+    width: 40%;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .newsletter-form input {
+    width: 440px;
+  }
+  .newsletter-left-img {
+    left: 2%;
+  }
+  .newsletter-right-img {
+    right: -7%;
+    top: -23%;
+  }
+  .newsletter-right-img img {
+    width: 40%;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .newsletter-form input {
+    width: 250px;
+  }
+  .newsletter-right-img img {
+    width: 30%;
+  }
+  .newsletter-right-img {
+    right: 0%;
+    top: -31%;
+  }
+  .newsletter-left-img {
+    left: 0%;
+  }
+  .newsletter-form button {
+    right: 8px;
+    height: 32px;
+    width: 100px;
+    top: 12px;
+  }
+  .newsletter-form input {
+    padding: 10px;
+  }
 }

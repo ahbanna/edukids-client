@@ -57,14 +57,17 @@ const Newsletter = () => {
               <button type="submit">Subscribe</button>
             </form>
           </div>
+          <div className="newsletter-left-img">
+            <img src={newsletterImgLeft} alt="" srcset="" />
+          </div>
         </Container>
         <div className="newsletter-img">
           <div className="newsletter-right-img">
             <img src={newsletterImgRight} alt="" srcset="" />
           </div>
-          <div className="newsletter-left-img">
+          {/* <div className="newsletter-left-img">
             <img src={newsletterImgLeft} alt="" srcset="" />
-          </div>
+          </div> */}
         </div>
       </Tilt>
     </div>

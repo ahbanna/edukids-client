@@ -40,12 +40,16 @@ const Testimonial = () => {
           navigation={true}
           modules={[Grid, Autoplay, Navigation]}
           breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 30,
             },
             1024: {
