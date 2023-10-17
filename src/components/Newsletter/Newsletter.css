@@ -30,6 +30,8 @@
   border: none;
   border-radius: 50px;
   top: 8px;
+  background: linear-gradient(90deg, #19469b 15%, #cc3bb5 100%);
+  color: #fff;
 }
 .newsletter-right-img {
   position: absolute;

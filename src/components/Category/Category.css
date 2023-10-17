@@ -1,7 +1,6 @@
-/* #panel\:r1\:0 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-} */
+.category-area .section-area {
+  text-align: center;
+}
 .grid-item img {
   width: 100%;
   max-height: 230px;
@@ -11,7 +10,7 @@
   margin-bottom: 8px;
 }
 .grid-item {
-  border: 1px solid #ff4646;
+  border: 1px solid #19469b;
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
@@ -21,25 +20,29 @@
 }
 .react-tabs__tab-panel {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 .react-tabs ul li {
   display: inline-block;
-  margin: 0 20px;
-  padding: 10px;
-  background: #ff4646;
+  margin: 8px 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #19469b 15%, #cc3bb5 100%);
   color: #fff;
   transition: 0.3s;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 30px;
 }
-.react-tabs ul li:hover {
+/* .react-tabs ul li:hover {
   background: #253b70;
   border-radius: 20px;
   transition: 0.3s;
-}
-.category-area.container {
+} */
+.category-area {
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .react-tabs__tab-list {
   text-align: center;
@@ -52,6 +55,20 @@ button.view-details {
   padding: 7px 13px;
 }
 
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .react-tabs__tab-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile device */
 @media only screen and (max-width: 576px) {
   .react-tabs__tab-list {
     display: flex;

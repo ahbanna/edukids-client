@@ -72,6 +72,8 @@
   background: #cc3bb5;
   transition: 0.3s;
 }
+
+/*  */
 /* ----------------- RESPONSIVE starts ----------- */
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {

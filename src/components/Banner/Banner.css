@@ -1,9 +1,15 @@
-.banner-area .swiper {
-  height: 700px !important;
+.banner-area {
+  position: relative;
+  /* height: 70vh !important; */
 }
+.banner-area .swiper {
+  height: 70vh !important;
+  height: 100%;
+}
+
 .banner-content {
   position: absolute;
-  top: 31%;
+  top: 22%;
   width: 40%;
 }
 .banner-content span {
@@ -14,12 +20,16 @@
 .banner-content h2 {
   font-size: 64px;
   font-weight: 600;
-  line-height: 70px;
+  line-height: 1.2;
   margin: 20px 0;
 }
 .banner-content p {
   font-size: 17px;
   margin-bottom: 30px;
+}
+.banner-area .swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 .banner-2 .banner-content {
   left: 0;
@@ -28,7 +38,7 @@
   text-align: center;
 }
 .banner-3 img {
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 .banner-3 .banner-content {
   right: 14%;
@@ -44,6 +54,125 @@
   color: #d3d3d3;
 }
 
-/* Responsive */
-@media only screen and (max-width: 576px) {
+/* ----------------- RESPONSIVE starts ----------- */
+/* Extra large */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .banner-content {
+    top: 27%;
+    width: 50%;
+  }
+  .banner-content h2 {
+    font-size: 40px;
+  }
+  .banner-3 .banner-content {
+    right: 4%;
+  }
+  .banner-4 .banner-content {
+    right: 4%;
+  }
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .swiper {
+    height: 50vh !important;
+  }
+  .banner-content h2 {
+    font-size: 32px;
+  }
+  .banner-content {
+    top: 17%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-area .swiper {
+    height: 40vh !important;
+  }
+  .banner-content h2 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  .banner-content {
+    top: 17%;
+    text-align: center;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-3 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-4 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-area .swiper {
+    height: 40vh !important;
+  }
+  .banner-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  .banner-content span {
+    font-size: 14px;
+  }
+  .banner-content {
+    top: 14%;
+    text-align: center;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-3 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-4 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .banner-area .swiper {
+    height: 40vh !important;
+  }
+  .banner-content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .banner-content p {
+    font-size: 14px;
+  }
+  .banner-content span {
+    font-size: 14px;
+  }
+  .banner-content {
+    top: 14%;
+    text-align: center;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-3 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner-4 .banner-content {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }

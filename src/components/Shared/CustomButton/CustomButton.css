@@ -1,0 +1,68 @@
+.custom-btn {
+  background: linear-gradient(90deg, #19469b 15%, #cc3bb5 100%);
+  display: inline-block;
+  min-height: 50px;
+  min-width: 180px;
+  margin: 10px 0;
+}
+.custom-btn a {
+  background-image: repeating-linear-gradient(
+      2deg,
+      #ffffff,
+      #ffffff 12px,
+      transparent 12px,
+      transparent 20px,
+      #ffffff 20px
+    ),
+    repeating-linear-gradient(
+      92deg,
+      #ffffff,
+      #ffffff 12px,
+      transparent 12px,
+      transparent 20px,
+      #ffffff 20px
+    ),
+    repeating-linear-gradient(
+      182deg,
+      #ffffff,
+      #ffffff 12px,
+      transparent 12px,
+      transparent 20px,
+      #ffffff 20px
+    ),
+    repeating-linear-gradient(
+      272deg,
+      #ffffff,
+      #ffffff 12px,
+      transparent 12px,
+      transparent 20px,
+      #ffffff 20px
+    );
+  background-size: 3px calc(100% + 20.01px), calc(100% + 20.01px) 3px,
+    3px calc(100% + 20.01px), calc(100% + 20.01px) 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 0.6s infinite linear;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  min-height: 50px;
+  min-width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.custom-btn button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+@keyframes borderAnimation {
+  from {
+    background-position: 0 0, -20.01px 0, 100% -20.01px, 0 100%;
+  }
+  to {
+    background-position: 0 -20.01px, 0 0, 100% 0, -20.01px 100%;
+  }
+}

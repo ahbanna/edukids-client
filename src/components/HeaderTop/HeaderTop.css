@@ -19,13 +19,13 @@
 }
 .header-top-info ul li:hover,
 .header-top-info ul li:hover a {
-  color: #ff7479;
+  color: #cc3bb5;
   transition: 0.3s;
 }
 .header-top-info ul li a {
   color: #fff;
 }
 .header-top-info ul li svg {
-  color: #ff7479;
+  color: #cc3bb5;
   margin: 0 5px 3px 0;
 }

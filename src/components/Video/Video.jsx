@@ -7,6 +7,7 @@ import { Modal, Button } from "react-bootstrap";
 import videoImg from "../../assets/video/video-img.jpg";
 import playIcon from "../../assets/paly-btn.json";
 import Lottie from "lottie-react";
+import CustomButton from "../Shared/CustomButton/CustomButton";
 
 const Video = () => {
   const [show, setShow] = useState(false);
@@ -22,11 +23,11 @@ const Video = () => {
             subtitle="Visual Representation"
             text=" Explore, Learn, Play: Your Ultimate Destination for Toy Maintenance, Community Fun, Behind-the-Scenes Manufacturing, Happy Customers, Reviews, Unboxing Thrills, and Exciting Toy Comparisons!"
           ></SectionTitle>
-          <button>
-            <Link to="https://www.youtube.com/" target="_blank">
-              View More
-            </Link>
-          </button>
+          <CustomButton
+            buttonText="View More"
+            to="https://www.youtube.com/"
+            target="_blank"
+          ></CustomButton>
         </div>
         <div className="video">
           <img

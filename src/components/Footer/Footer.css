@@ -16,16 +16,16 @@
   font-weight: 700;
   /* color: #fff; */
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .footer-area h3::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 60px;
-  height: 1px;
+  width: 80px;
+  height: 3px;
   content: "";
-  background: #804bff;
+  background: #19469b;
 }
 .footer-area p {
   /* color: #fff; */
@@ -87,8 +87,14 @@
 .footer-ball {
   position: absolute;
   animation: ballAnimation 6s infinite;
-  bottom: 22%;
-  right: 30%;
+  bottom: 15%;
+  right: 21%;
+}
+.footer-contact a {
+  color: #000;
+}
+.footer-social {
+  margin-top: 10px;
 }
 @keyframes ballAnimation {
   0% {
@@ -109,8 +115,59 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 576px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-area h3::before {
+    left: 43%;
+  }
+  .footer-main {
+    text-align: center;
+  }
   .footer-contact {
     padding-left: 0;
+  }
+  .quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .footer-gril {
+    bottom: 33%;
+    left: 6%;
+  }
+  .footer-ball {
+    bottom: 37%;
+    right: 8%;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .footer-area h3::before {
+    left: 43%;
+  }
+  .footer-main {
+    text-align: center;
+  }
+  .footer-contact {
+    padding-left: 0;
+  }
+  .quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .footer-gril,
+  .footer-ball {
+    display: none;
+  }
+  .footer-bottom {
+    flex-direction: column;
   }
 }

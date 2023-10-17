@@ -5,6 +5,7 @@ import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import creativeImg1 from "../../assets/creative/creative-img1.jpg";
 import creativeImg2 from "../../assets/creative/creative-img2.jpg";
 import handShake from "../../assets/creative/hand-shake.png";
+import CustomButton from "../Shared/CustomButton/CustomButton";
 const Creative = () => {
   return (
     <div className="creative-area">
@@ -15,7 +16,10 @@ const Creative = () => {
             title="The Perfect Place For Your Kids To Open Their Creative Wings"
             text="we believe in nurturing young minds through play. Our curated collection of educational toys is designed to be more than just playthings; they are tools that inspire creativity, innovation, and endless imagination. Our toys not only entertain but also educate, encouraging children to think critically, solve problems, and express themselves freely."
           ></SectionTitle>
-          <button>See Collection</button>
+          <CustomButton
+            buttonText="See Collection"
+            to="/alltoys"
+          ></CustomButton>
         </div>
         <div className="creative-img">
           <img src={creativeImg1} alt="" srcset="" />

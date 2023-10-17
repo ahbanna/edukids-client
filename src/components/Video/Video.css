@@ -50,12 +50,17 @@
   .video-content .section-area {
     text-align: center;
   }
+  .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .video-area .container {
     grid-template-columns: repeat(1, 1fr);
   }
   .video {
     width: 70%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .play-btn {
     top: 7%;
@@ -73,9 +78,14 @@
   .video-area .container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .video {
     width: 80%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .play-btn {
     top: -2%;
@@ -93,9 +103,14 @@
   .video-area .container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .video {
     width: 80%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .video img {
     border-radius: 0;

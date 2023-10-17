@@ -24,7 +24,7 @@
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
   .section-title {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 /* MD device */
@@ -33,7 +33,7 @@
     text-align: center;
   }
   .section-title {
-    font-size: 38px;
+    font-size: 32px;
     margin: 10px 0;
   }
 }
@@ -46,7 +46,6 @@
     font-size: 28px;
     margin: 10px 0;
   }
-  
 }
 /* Mobile device */
 @media (max-width: 575px) {
@@ -54,7 +53,10 @@
     text-align: center;
   }
   .section-title {
-    font-size: 24px;
+    font-size: 20px;
     margin: 10px 0;
+  }
+  .section-text {
+    font-size: 15px;
   }
 }

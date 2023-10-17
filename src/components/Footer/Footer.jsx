@@ -6,13 +6,14 @@ import { FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 import payImg from "../../assets/footer/pay.png";
 import footerGirlImg from "../../assets/footer/footer-girl.avif";
 import ballImg from "../../assets/footer/ball.png";
+import { NavLink } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <div className="footer-area">
       <div className="container">
         <div className="row footer-main">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4">
             <h3>About EduKids</h3>
             <p>
               We believe that education can be fun, engaging, and exciting. Our
@@ -20,8 +21,8 @@ const Footer = () => {
               toys that not only entertain but also inspire young minds.
             </p>
             <div className="footer-social">
-              <h4>Follow us :</h4>
-              <SocialLink></SocialLink>
+              {/* <h4>Follow us :</h4>
+              <SocialLink></SocialLink> */}
               {/* <ul className="social-icon">
                 <li>
                   <a href="https://twitter.com/home">
@@ -51,7 +52,7 @@ const Footer = () => {
               </ul> */}
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-5">
             <div className="footer-contact">
               <h3>Get in touch</h3>
               <ul>
@@ -73,15 +74,26 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-4 footer-subscribe">
-            <h3>Keep in touch</h3>
-            {/* <form action="">
-              <input type="text" name="" id="" placeholder="Enter Your Email" />
-              <div className="submit-btn">
-                <input type="submit" value="Subscribe Now" />
+          <div className="col-lg-4 col-md-3  ">
+            <div className="quick-link">
+              <h3>Quick Links</h3>
+              <div>
+                <ul>
+                  <li>
+                    <NavLink to="/">Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/blog">Blog</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/alltoys">Collection</NavLink>
+                  </li>
+                </ul>
               </div>
-            </form> */}
-            <SocialLink></SocialLink>
+              <div className="footer-social">
+                <SocialLink></SocialLink>
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer-gril">

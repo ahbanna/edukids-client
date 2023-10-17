@@ -52,7 +52,12 @@
   }
   .creative-img {
     width: 85%;
-    margin: 0 auto;
+    margin: 15px auto;
+  }
+  .creative-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /*SM Device*/
@@ -65,10 +70,15 @@
   }
   .creative-img {
     width: 85%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .creative-area .section-title {
     font-size: 28px;
+  }
+  .creative-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* Mobile device */
@@ -85,6 +95,11 @@
   .creative-img {
     grid-template-columns: repeat(1, 1fr);
     width: 85%;
-    margin: 0 auto;
+    margin: 15px auto;
+  }
+  .creative-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

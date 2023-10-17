@@ -118,6 +118,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import CustomButton from "../Shared/CustomButton/CustomButton";
 
 const Category = () => {
   // toast
@@ -136,10 +138,11 @@ const Category = () => {
 
   return (
     <div className="category-area container">
-      <div className="section-title">
-        <p>Browse our wide selection</p>
-        <h3>Shop by category</h3>
-      </div>
+      <SectionTitle
+        subtitle="Product Category"
+        title="Shop By Category"
+        text="We curate an extensive collection of toys that cater to every child's imagination and delight."
+      ></SectionTitle>
       <Tabs defaultActiveTab={activeTab} onSelect={(tab) => setActiveTab(tab)}>
         <TabList>
           <Tab>Math Toys</Tab>
@@ -239,6 +242,11 @@ const Category = () => {
           </div>
         </div>
       </Tabs>
+      <CustomButton
+        buttonText="View More"
+        to="/alltoys"
+        target="_blank"
+      ></CustomButton>
     </div>
   );
 };
